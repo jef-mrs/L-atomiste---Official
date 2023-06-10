@@ -1,0 +1,24 @@
+#bio{
+  text-align: center;
+  height: calc(100vh - 120px);
+  width:100%;
+
+}
+
+#bio-text {
+  color:white;
+  font-family: 'Alata', sans-serif;
+  margin: 50px 1rem;
+  display:inline-block;
+}
+
+@media screen and (min-width: 550px ){
+  #bio-text{
+    width: 500px;
+    margin: 50px auto;
+  }
+}
+
+#bio.none{
+  display: none;
+}

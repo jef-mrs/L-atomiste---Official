@@ -1,0 +1,97 @@
+
+#radio{
+
+  .name-show{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    background-color:rgba(255,255,255,.1);
+    border-radius:  4px;
+    font-family: 'Alata', sans-serif;
+    box-shadow: 1px 0px 5px 0  rgba(255,255,255, 0.1);
+    color: white;
+  }
+
+
+
+  .name-show h1 {
+
+    font-size: 20px;
+  }
+  .name-show p {
+    font-style: italic;
+  }
+
+  .name-show div {
+    width: 60%;
+    padding: 8px;
+  }
+  .name-show img {
+    width: 150px;
+    height: 100%;
+  }
+
+
+  .showradio{
+    cursor: pointer;
+    width: 100%;
+   }
+
+  .showradio:hover {
+    .name-show{
+      color: #6F1AB6;
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+  .music-image{
+    display: none;
+  }
+
+
+  #music-container{
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 120px);
+
+    #radioshow {
+        margin:24px 24px 0;
+        // flex-grow: 1;
+        width: calc(100vw);
+        overflow: hidden scroll;
+      }
+  }
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+
+#radio{
+  .music-image {
+    display: initial;
+    width:100%;
+    // height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin: 20px 20px 0  ;
+  }
+
+  #radioshow {
+    margin: 24px 0 0 24px;
+  }
+
+}
+
+}
+
+
+#radio.none {
+  display:none;
+}

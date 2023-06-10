@@ -1,0 +1,59 @@
+#contact {
+  display: block;
+  box-sizing: border-box;
+
+  .mail {
+    font-family: 'Alata', sans-serif;
+    width: 300px;
+    margin: 0 auto;
+    color: white;
+
+    span{
+      display: none;
+    }
+
+  }
+
+  .me {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 861px) {
+
+
+  #contact {
+
+    display:flex;
+    height: 60px;
+    width:100%;
+    align-items: center;
+    justify-content: space-around;
+
+
+    .me{
+      display: block;
+      font-family: 'Alata', sans-serif;
+      flex-grow:1;
+      margin-left: 12px;
+      color: white;
+    }
+
+    .mail {
+      margin: unset;
+      margin-right: 24px;
+      width:400px;
+
+      span {
+        display: initial;
+      }
+    }
+
+  }
+}
+
+
+#contact.none {
+  display: none;
+}

@@ -1,0 +1,36 @@
+//Main
+
+body{
+  background-color: rgb(0,0,0);
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar { width: 1px !important; }
+
+
+//Scss Partial
+@import"bio";
+@import"contact";
+@import "home";
+@import "music";
+@import "navbar";
+@import "radio";
+@import "shows";
+
+
+//Scss Import Fonts
+@import "fonts";
